@@ -1,1 +1,1 @@
-console.log["안녕하세요"];
+console.lo("안녕하세요");
