@@ -76,7 +76,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h1><i class="fas fa-cog"></i>Dashboard</h1>
+            <h1><i class="fas fa-cog"></i> Settings</h1>
           </div>
         </div>
       </div>
@@ -87,35 +87,22 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
+            <a href="posts.html" class="btn btn-light btn-block"> 
+              <i class="fas fa-arrow-left"></i> 돌아가기</a>
+            </div>
+            <div class="col-md-3">
+              
             <a
               href="#"
               class="btn btn-primary btn-block text-white"
               data-toggle="modal"
               data-target="#addPostModal"
             >
-              <i class="fas fa-plus"></i> Add Post
+              <i class="fas fa-check"></i> 저장하기
             </a>
             </div>
-            <div class="col-md-3">
-                <a
-                href="#"
-                class="btn btn-success btn-block text-white"
-                data-toggle="modal"
-                data-target="#addCategoryModal"
-                >
-                <i class="fas fa-plus"></i> Add Category
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a
-                href="#"
-                class="btn btn-warning btn-block"
-                data-toggle="modal"
-                data-target="#addUserModal"
-                >
-                <i class="fas fa-plus"></i> Add User
-                </a>
-            </div>
+            
+           
           </div>
         </div>
       </div>
@@ -125,7 +112,7 @@
                     <div class="container">
                         <div class="row">
                             <!-- 왼쪽 col-9 -->
-                            <div class="col-md-9">
+                            <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header">
                                         <h4>최근 게시물</h4>
@@ -196,33 +183,7 @@
                                     </table>
                                 </div>
                             </div>
-        <!-- 오른쪽꺼 시작하기 -->
-        <div class="col-md-3">
-            <div class="card text-center bg-primary text-white mb-3">
-                <div class="card-body">
-                    <h3>Posts</h3>
-                    <h4 class="display-4"> <i class="fas fa-pencil-alt"></i>6</h4>
-                    <a href="posts.html" class="btn btn-outline-light btn-sm">View</a>
-                </div>
-            </div>
-            <div class="card text-center bg-primary text-white mb-3">
-                    <div class="card-body">
-                        <h3>Categories</h3>
-                        <h4 class="display-4"> <i class="fas fa-folder"></i>4</h4>
-                        <a href="categories.html" class="btn btn-outline-light btn-sm">View</a>
-                    </div>
-                </div>
-                <div class="card text-center bg-warning text-white mb-3">
-                        <div class="card-body">
-                            <h3>Posts</h3>
-                            <h4 class="display-4"> <i class="fas fa-users"></i>4</h4>
-                            <a href="users.html" class="btn btn-outline-light btn-sm">View</a>
-                        </div>
-                    </div>
-        
-        
-        </div>
-        
+      
         
         
                         </div>
@@ -248,7 +209,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title">Add Post</h5>
+                    <h5 class="modal-title">포스트 수정</h5>
                     <button class="close" data-dismiss="modal">
                         <span>&times;</span>
 
@@ -258,7 +219,7 @@
                     <form>
                         <div class="form-group">
                             <label for="title">제목</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="Post One">
                         </div>
                         <div class="form-group">
                             <label for="category">카테고리</label>
@@ -282,7 +243,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="body">내용</label>
-                                <textarea name="editor1" class="form-control"></textarea>
+                                <textarea name="editor1" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione optio rem praesentium quisquam. Corrupti quis hic deleniti consequatur magni ea dignissimos mollitia quod. Vero nesciunt architecto velit vel, cum porro.</textarea>
                             </div>
                     </form>
                     <div class="modal-footer">
